@@ -151,3 +151,12 @@ bmsubmit.sh -u rules/throw.btm
 ```
 
 You can change the `throw.btm` to `return.btm`, `sleep.btm` or `trace.btm` to see the output.
+
+# Added the below part
+# to build locally
+docker build --tag apaliwal80/java-chaos:second .
+# to push to docker hub
+docker push apaliwal80/java-chaos:second
+
+# After injecting the JVM fault, please checks logs as
+kubectl -n helloworld logs -f helloworld
