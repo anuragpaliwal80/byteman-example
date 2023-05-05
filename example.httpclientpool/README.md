@@ -32,6 +32,8 @@ go run HTTPServer.go &
 
 This HTTP server will handle HTTP requests for URL `127.0.0.1:8090/hello`.
 
+To stop this server, use `npx kill-port 8090`
+
 Enter into the directory of the example:
 
 ```bash

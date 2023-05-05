@@ -99,3 +99,11 @@ bmsubmit.sh -p 9288 -u ./rules/return2.btm
 ```
 
 
+# Added the below part
+# to build locally
+docker build --tag apaliwal80/java-chaos:helloworld2 .
+# to push to docker hub
+docker push apaliwal80/java-chaos:helloworld2
+
+# After injecting the JVM fault, please checks logs as
+kubectl -n helloworld logs -f helloworld
